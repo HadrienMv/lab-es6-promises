@@ -45,6 +45,27 @@ getInstruction('mashedPotatoes', 0, (step0) => {
   }, (e) => { console.log(e) })
 }, (e) => { console.log(e) });
 
+
+// Iteration 1
+// Recursive approach
+// function getInstructionsRecursive(recipe, step) {
+//   getInstruction(recipe, step, (instruction) => {
+//     document.querySelector(`#${recipe}`).innerHTML += `<li>${instruction}</li>`;
+//     if (step < 4) {
+//       getInstructionsRecursive(recipe, step + 1);
+//     } else {
+//       document.querySelector(`#${recipe}`).innerHTML += "<li>Mashed potatoes are ready!</li>";
+//       document.querySelector(`#${recipe}Img`).style.display = 'block';
+//     }
+//   }, (e) => { console.log(e) });
+// }
+
+// getInstructionsRecursive('mashedPotatoes', 0);
+
+
+
+
+
 // Iteration 2 - using promises
 obtainInstruction('steak', 0)
   .then((step0) => {
